@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task 06</title>
+        <link rel="stylesheet" href="/Day06/day6.css">
+    </head>
+    <body>
+        <div id="box_1"></div>
+        <div id="box_2"></div>
+        <div id="box_3"></div>
+        <div class="slideshow-container">
+            <img id="firstImage" src="../images/1.jpg" width="500px" height="500px">
+            <button id="nextImage" onclick="nextImage()">Next</button>
+            <button id="perviousImage" onclick="perviousImage()">Previous</button>
+            <button id="slideShow" onclick="slideShow()">Slide Show</button>
+            <button id="stopSlide" onclick="stopSlide()">Stop Sliding</button>
+        </div>
+
+
+
+        <form id="validationForm">
+            <label for="name">StudentName:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="grade">StudentGrade:</label>
+            <input type="number" id="grade" name="grade"><br><br>
+            <button type="button" onclick="validation()">ADD</button>
+        </form>
+
+
+
+        <br><br>
+        <hr>
+        <br><br>
+
+
+
+        <form id="validationForm">
+            <label for="name">StudentName:</label>
+            <input type="text" id="name" name="name">
+            <span id="nameError"></span><br><br>
+
+            <label for="grade">StudentGrade:</label>
+            <input type="number" id="grade" name="grade">
+            <span id="gradeError"></span><br><br>
+
+            <button type="button" onclick="validation()">ADD</button>
+        </form>
+
+
+        <script src="/Day06/day6.js"></script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+#box_1 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+#box_2 {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    margin: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+#box_3 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+#gradeError, #nameError {
+    color: red;
+    font-size: 12px;
+  }
