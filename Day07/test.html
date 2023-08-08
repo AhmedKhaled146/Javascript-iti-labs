@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Data and Table Example</title>
+</head>
+<body>
+    <form id="studentForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="grade">Grade:</label>
+        <input type="number" id="grade" name="grade">
+        <button type="button" onclick="addStudent()">Add Student</button>
+      </form>
+
+      <select id="sortOption" onchange="sortTable()">
+        <option value="name">Sort by Name</option>
+        <option value="grade">Sort by Grade</option>
+      </select>
+
+      <table id="studentTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Grade</th>
+          </tr>
+        </thead>
+        <tbody id="studentData">
+          <!-- Table data will be populated here -->
+        </tbody>
+      </table>
+
+    <script src="/Day07/day7 task 1.js"></script>
+</body>
+</html>

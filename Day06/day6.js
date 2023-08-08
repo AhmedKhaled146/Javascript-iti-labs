@@ -7,7 +7,7 @@ let id;  // id is declared but has not assigne a value in JS
 slideShow.onclick = function() {
   // console.log('hi')
   if (id === undefined) {
-      id = setInterval(() => {
+    slideShow.id = setInterval(() => {
         firstImage.counter++;
         if (firstImage.counter >= 8) {
           // return to the first image
@@ -38,7 +38,7 @@ perviousImage.onclick = function() {
 };
 
 stopSlide.onclick = function () {
-  clearInterval(id);
+  clearInterval(slideShow.id);
   id = undefined; // for when i press again on the slide button continue with me my slider from the image i stoped at
 };
 // *******************************************************************
@@ -101,26 +101,26 @@ const validation=function(){
 // another
 // ************
 
-const validation=function(){
-  const nameInput = document.querySelector('#name');
-  const gradeInput = document.querySelector('#grade');
+// const validation=function(){
+//   const nameInput = document.querySelector('#name');
+//   const gradeInput = document.querySelector('#grade');
 
-  const name = nameInput.value;
-  const grade = parseFloat(gradeInput.value);
+//   const name = nameInput.value;
+//   const grade = parseFloat(gradeInput.value);
 
-  let newSpanError = document.createElement('span');
-  newSpanError.textContent = 'you must enter a name and a grade number must be between 0 and 100';
-  newSpanError.style = 'color: red'
+//   let newSpanError = document.createElement('span');
+//   newSpanError.textContent = 'you must enter a name and a grade number must be between 0 and 100';
+//   newSpanError.style = 'color: red'
 
-  if (isNaN(grade) || grade < 0 || grade > 100 ||name == ''){
+//   if (isNaN(grade) || grade < 0 || grade > 100 ||name == ''){
 
-    validationForm.appendChild(newSpanError);
+//     validationForm.appendChild(newSpanError);
 
-    // console.log("you must enter a name and a grade number must be between 0 and 100")
-  }else{
-    console.log('Student Name is:', name);
-    console.log('Student Grade is:', grade);
-    newSpanError.remove();
-  }
+//     // console.log("you must enter a name and a grade number must be between 0 and 100")
+//   }else{
+//     console.log('Student Name is:', name);
+//     console.log('Student Grade is:', grade);
+//     newSpanError.remove();
+//   }
 
-}
+// }

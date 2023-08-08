@@ -1,0 +1,16 @@
+img{
+    width: 250px;
+    height: 150px;
+    position: absolute;
+}
+#bask{
+    position: absolute;
+    top: 782px;
+}
+
+th{
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    /* background-color: red; */
+}
